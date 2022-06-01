@@ -18,3 +18,13 @@ console.log ([
     2,
     3
  ]);
+
+ var clima = "Quente";
+ clima = "Frio";
+ console.log (clima);
+ console.log (typeof clima);
+
+ {
+     let x=0
+     console.log (x)
+ }
