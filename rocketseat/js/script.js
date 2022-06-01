@@ -32,3 +32,11 @@ console.log ([
  var name = "João";
  var age = 35 ;
 console.log ('O '+ name + ' tem ' +age+ ' anos.'  )
+
+
+const animals = [
+'lion',
+'monkey',
+'cat'
+];
+console.log (animals)
