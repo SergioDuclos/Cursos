@@ -35,7 +35,7 @@ if (scoreA){
 
 console.log (scoreFinal)
 
-*/
+
 
 let family = {
     incomes  : [2500, 3200, 250.43, 360.45],
@@ -68,3 +68,8 @@ let family = {
   }
 
   calculateBalance();
+
+*/
+
+
+
