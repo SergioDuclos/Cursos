@@ -28,3 +28,7 @@ console.log ([
      let x=0
      console.log (x)
  }
+
+ var name = "João";
+ var age = 35 ;
+console.log ('O '+ name + ' tem ' +age+ ' anos.'  )
