@@ -11,3 +11,10 @@ console.log ({
     } 
 
 });
+
+console.log ([
+    "leite",
+    "pão",
+    2,
+    3
+ ]);
