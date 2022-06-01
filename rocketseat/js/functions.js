@@ -42,8 +42,6 @@ let family = {
     expenses : [320.24,128.45,176.87,1450.00,2000]
  }
 
-
-
  function sum(array){
     let total = 0;
 
