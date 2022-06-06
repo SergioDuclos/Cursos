@@ -1,0 +1,10 @@
+header{
+    padding: 4rem;
+    background-color: lightgray;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
