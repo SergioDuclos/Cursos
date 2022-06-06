@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+}   
+
 header{
     padding: 4rem;
     background-color: lightgray;
@@ -7,4 +11,9 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: .8rem;
 }
