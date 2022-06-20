@@ -9,10 +9,20 @@ body{
 h1{
     color:white;
 }
+
 h3{
     color: #f1c40f;
 }
+h2{
+    background-color: #f1c40f;
+    border: 2px solid;
 
+}
 li{
     color:white;
 }
+
+#astronomy-class{
+color: #e74c3c;
+}
+
