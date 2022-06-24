@@ -33,8 +33,6 @@ alert ( "Nome " + pessoaVelha + " Idade " + idadeVelha )
 alert ( "Nome " + pessoaNova + " Idade " + idadeNova )
 
 
-*/
-
 let velocity = 110
 if (velocity < 100){
     alert ("Estamos numa velocidade aceitável")
@@ -42,5 +40,7 @@ if (velocity < 100){
 }else{
     alert ("Estamos numa velocidade de risco")
 }
+*/
+
 
 
