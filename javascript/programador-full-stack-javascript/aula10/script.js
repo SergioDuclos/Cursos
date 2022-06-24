@@ -42,5 +42,7 @@ if (velocity < 100){
 }
 */
 
-
-
+let pilotoName = prompt ("Qual seu nome, piloto")
+let velocity = 0
+let newVelocity = prompt ("A que velocidade você gostaria de acelerar ?"); 
+let confirmVelocity = confirm ("Estamos acelerando " + newVelocity + " km/s");
