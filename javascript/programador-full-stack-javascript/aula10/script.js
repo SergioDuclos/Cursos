@@ -53,20 +53,14 @@ let confirmVelocity = confirm ("Estamos acelerando " + newVelocity + " km/s");
 
  if (velocity <= 0) {
     alert (" Nave esta parada")
+ }else if (velocity < 40){
+    alert ("Você esta devagar")
+ }else if (velocity < 80){
+    alert ("Uma boa velocidade")   
+ }else if (velocity <100){
+    alert ("Velocidade alta")   
  }else{
-    if (velocity < 40){
-        alert ("Você esta devagar")
-    }else{
-        if (velocity < 80){
-         alert ("Uma boa velocidade")   
-        }else{
-            if (velocity <100){
-             alert ("Velocidade alta")   
-            }else{
-                alert ("Velocidade Perigosa")
-            }
-        }
-
-    }
-
-}
+     alert ("Velocidade Perigosa")
+ }
+ 
+alert ( "Piloto" + pilotoName + "\n Velocidade " + velocity + " km/s" );
