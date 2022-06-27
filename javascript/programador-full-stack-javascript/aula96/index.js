@@ -2,4 +2,14 @@ let spaceship = prompt ("Digite o nome da nave")
 let charToReplace = prompt ("Qual caracter deseja substituir?")
 let replacementChar = prompt (" Por qual caracter você deseja substituir?")
 
-console.log (spaceship, charToReplace, replacementChar)
+let newSpaceship = ""
+
+for (let pos = 0 ; pos < spaceship.length; pos++ ){
+    if (spaceship[pos] == chartToReplace){
+        newSpaceship +=replacementChar
+    }else{
+        newSpaceship+=spaceship[pos]
+    }
+    }
+}
+alert ("O novo nome da nave é " + newSpaceship)
