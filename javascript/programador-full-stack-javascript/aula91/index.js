@@ -1,3 +1,5 @@
+
+
 let warpCount = 0
 let chosenOption = ""
 let spaceship = prompt ("Digite o nome da Nave")
@@ -10,8 +12,8 @@ while(chosenOption ==1) {
     alert ("Nave: " +spaceship+ "\n Quantidade de Dobras: "+ warpCount)
 }
 
-
 /*
+
 let velocity = 50
 let acceleration = 5
 while(velocity <=100){
