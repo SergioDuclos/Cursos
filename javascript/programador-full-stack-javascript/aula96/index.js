@@ -5,11 +5,11 @@ let replacementChar = prompt (" Por qual caracter você deseja substituir?")
 let newSpaceship = ""
 
 for (let pos = 0 ; pos < spaceship.length; pos++ ){
-    if (spaceship[pos] == chartToReplace){
+    if (spaceship[pos] == charToReplace){
         newSpaceship +=replacementChar
     }else{
         newSpaceship+=spaceship[pos]
     }
     }
-}
+
 alert ("O novo nome da nave é " + newSpaceship)
