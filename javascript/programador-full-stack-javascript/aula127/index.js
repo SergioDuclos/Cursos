@@ -40,3 +40,6 @@ do {
     }
 }while (chosenOption != "2")
 }
+
+registerSpaceship()
+showMenu()
