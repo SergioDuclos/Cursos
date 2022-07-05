@@ -15,12 +15,12 @@ function acelerate() {
     if (spaceship.velocity > spaceship.maxVelocity){
         alert ("VELOCIDADE MAXIMA ULTRAPASSADA!" +
         "\nVelocidade da nave: " + spaceship.velocity + "Km/s" +
-        "\n Velocidade máxima da nave : "+ spaceship.maxVelocity + "km/s")
+        "\nVelocidade máxima da nave : "+ spaceship.maxVelocity + "km/s")
     }
 }
 function stop (){
-    alert ("Nome: " + spaceship.name + "\nMáxima da nave: " + spaceship.type +
-    "\nVelocidade da nave: " + spaceship.velocity + "n\ Máxima da nave: "+ spaceship.maxVelocity)
+    alert ("Nome: " + spaceship.name + "\nTipo da Nave: " + spaceship.type +
+    "\nVelocidade da nave: " + spaceship.velocity + "\nMáxima da nave: "+ spaceship.maxVelocity)
     spaceship.velocity = 0
 }
 
