@@ -21,4 +21,22 @@ function acelerate() {
 function stop (){
     alert ("Nome: " + spaceship.name + "\nMáxima da nave: " + spaceship.type +
     "\nVelocidade da nave: " + spaceship.velocity + "n\ Máxima da nave: "+ spaceship.maxVelocity)
+    spaceship.velocity = 0
+}
+
+function showMenu (){
+    let chosenOption
+do {
+    chosenOption = prompt ("Voce deseja: \n1 - Acelerar \n2 - Parar")
+    switch (chosenOption){
+        case "1":
+            acelerate()
+            break
+        case "2":
+            stop()
+            break
+        default:
+             alert ("Opção Inválida")
+    }
+}while (chosenOption != "2")
 }
