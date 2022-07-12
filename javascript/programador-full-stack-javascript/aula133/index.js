@@ -20,4 +20,30 @@ function showMenu (){
                                "2-Imprimir naves\n" +
                                "3-Sair do programa")
     }
+    return chosenOption
+}
+function createSpaceship(){
+    let spaceshipName = prompt ("Informe o nome da nave")
+    let crewQuantity = prompt ("Informe a quantidade de tripulantes")
+    let spaceship = new Spaceship (spaceshipName, crewQuantity)
+    return spaceship
+}
+
+
+
+let hitchedSpaceships = []
+let chosenOption
+
+while(chosen !="3"){
+    chosenOption = showMenu ()
+    switch (chosenOption){
+        case "1":
+            let spaceshipToAdd = createSpaceship()
+            spaceshipToAdd.hitch()
+            hitchedSpaceships.push (spaceshipToAdd)
+            break
+        case "2":
+            printSpaceshipList (hitchedSpaceships)
+            break
+    }
 }
