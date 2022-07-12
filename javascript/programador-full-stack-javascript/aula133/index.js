@@ -29,12 +29,19 @@ function createSpaceship(){
     return spaceship
 }
 
-
+function printSpaceshipList (spaceships){
+    let spaceshipList = ""
+    spaceships.forEach ((spaceship, index) => {
+        spaceshipList += (index+1)+ "- " + spaceship.name+ 
+        "(" + spaceship.crewQuantity + "tripulantes)\n"
+    })
+    alert (spaceshipList)
+}
 
 let hitchedSpaceships = []
 let chosenOption
 
-while(chosen !="3"){
+while(chosenOption !="3"){
     chosenOption = showMenu ()
     switch (chosenOption){
         case "1":
