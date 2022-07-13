@@ -4,7 +4,7 @@ class App{
     }
 }
 
-start(){
+start();{
     this.enrollSpaceship()
     let choseOption
     do{
@@ -14,7 +14,7 @@ start(){
       this.printAndExit()
 }
 
-enrollSpaceship(){
+enrollSpaceship();{
     let spaceshipName = prompt ("Qual o nome da Nave")
     let crewQuantity = prompt ("Qual a quantidade de tripulantes")
     let spaceshipKind = this.askForSpaceshipKind()
@@ -26,9 +26,9 @@ enrollSpaceship(){
         this.spaceship = new TransportSpaceship (spaceshipName, crewQuantity, sitsQuantity)
     }
 }
-askForSpaceshipKind (){
+askForSpaceshipKind ();{
     let choseOption
-    while (! ["1","2"]).includes(choseOption)){
+    while (! ["1","2"].includes(choseOption)){
         choseOption = prompt ("Qual o tiupo da nave?\n 1- Batalha\n 2- Transporte ")
     }
     return choseOption
