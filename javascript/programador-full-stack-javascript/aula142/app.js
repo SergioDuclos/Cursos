@@ -31,9 +31,9 @@ askForSpaceshipKind ();{
     while (! ["1","2"].includes(choseOption)){
         choseOption = prompt ("Qual o tiupo da nave?\n 1- Batalha\n 2- Transporte ")
     }
-    return choseOption
+ 
 }
-
+   return choseOption
 
 showInitialMenu(){
     const promptMessage = "O que você deseja fazer?\n"+
@@ -43,10 +43,12 @@ showInitialMenu(){
     let choseOption =  prompt (promptMessage) 
     while (! ["1","2", "3"]).includes(choseOption)){
         choseOption = prompt (promptMessage)
+   
+       
     }
-    return choseOption
-  }
-}
+    
+  } return choseOption
+
 
 redirectFeature (choseOption){
     switch (choseOption) {
