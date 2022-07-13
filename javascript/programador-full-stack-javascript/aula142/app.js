@@ -4,6 +4,16 @@ class App{
     }
 }
 
+start (){
+    this.enrollSpaceship()
+    let choseOption
+    do{
+        choseOption = this.showInitialMenu ()
+        this.redirectFeature (choseOption)
+      }while (choseOption !="3")
+      this.printAndExit()
+}
+
 enrollSpaceship(){
     let spaceshipName = prompt ("Qual o nome da Nave")
     let crewQuantity = prompt ("Qual a quantidade de tripulantes")
@@ -36,4 +46,25 @@ showInitialMenu(){
     }
     return choseOption
   }
-} 
+}
+
+redirectFeature (choseOption){
+    switch (choseOption) {
+        case "1":
+            this.accelerateSpaceship()
+            break
+        case "2":
+            this.enrollSpaceship()
+            break    
+    }
+}
+accelerateSpaceship(){
+    let acceleration = Number(prompt("Quanto gostaria de acelerar"))
+    this.spaceship.speedUp()
+}
+printAndExit(){
+    let finalMessage = "Nome: "+ this.spaceship.name + "\n" +
+                        "Quantidade de Tripulantes: " + this.spaceship.crewQuantity + "\n" +
+                        "Velocidade Atual: " + this.spaceship.currentVelocity +"\n"
+    alert(finalMessage)                           
+}

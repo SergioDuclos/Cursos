@@ -1,3 +1,7 @@
+const app = new App ()
+app.start()
+
+
 class Spaceship{
     constructor (name, crewQuantity){
         this.name = name
