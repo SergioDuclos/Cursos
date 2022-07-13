@@ -4,7 +4,7 @@ class App{
     }
 }
 
-start (){
+start(){
     this.enrollSpaceship()
     let choseOption
     do{
