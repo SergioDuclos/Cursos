@@ -1,6 +1,6 @@
 class app{
     addProperty(){
-      event.preventDefault()
+     Event.preventDefault()
       let kind = document.querySelector ("select[name='kind']").value
       let area = document.querySelector ("input[name='area']").value   
       let rented = document.querySelector ("input[name='rented']").value
@@ -38,6 +38,11 @@ cleanForm(){
 document.querySelector("input[name='area']").value = ""
 document.querySelector("input[name='rented']").checked = false
 }
+
+    remove(){
+        let liToRemove = event.target.parentNode
+        document.getElementById("properties").removeChild(liToRemove)
+    }
 
 }
 
