@@ -11,7 +11,28 @@ class app{
 
     addOnPropertiesList(property){
         let listElement = document.createElement("li")
+        let propertyInfo = "Tipo: " + property.kind + "(Área): " + property.area + "m2)"
+        if (property.rented){
+            let rentedMark = this.createRentedMark()
+            listElement.appendChild(rentedMark)
+        }
+        listElement.innerHTML += propertyInfo
+        let buttonToRemove = this.createRemoveButton()
+        listElement.appendChild(buttonToRemove)
+        document.getElementById("properties").appendChild(listElement)
     }
+createRentedMark(){
+let rentedMark = document.createElement ("span")
+rentedMark.style.color = "white"
+rentedMark.style.backgroundColor = "red"
+rentedMark.innerText = "ALUGADO"
+return rentedMark
+}
+createRemoveButton(){
+let buttonToRemove = document.createElement("button")
+buttonToRemove.setAttribute("onclick", "app.remove()") 
+}
+
 
 }
 
