@@ -30,9 +30,14 @@ return rentedMark
 }
 createRemoveButton(){
 let buttonToRemove = document.createElement("button")
-buttonToRemove.setAttribute("onclick", "app.remove()") 
+buttonToRemove.setAttribute("onclick", "app.remove()")
+buttonToRemove.innerText= "Remover"
+return buttonToRemove 
 }
-
+cleanForm(){
+document.querySelector("input[name='area']").value = ""
+document.querySelector("input[name='rented']").checked = false
+}
 
 }
 

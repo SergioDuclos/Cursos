@@ -7,11 +7,12 @@
     <title>Document</title>
     <script src="js/property.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
   <h3>Cadastro de Imóveis</h3>
 
-  <form action="#">
+  <form onsubmit="app.addProperty()">
     <p>
         <label for="">Tipo:</label>
         <select name="kind" id="">
@@ -28,7 +29,7 @@
     </p>
 
     <button type="submit">Salvar</button>
-    <button type="reset">Limpar</button>
+    <button type="button" onclick="app.cleanForm()">Limpar</button>
 
 </form>
 
