@@ -1,11 +1,11 @@
-class app{
+class App{
     addProperty(){
-     Event.preventDefault()
+     event.preventDefault()
       let kind = document.querySelector ("select[name='kind']").value
       let area = document.querySelector ("input[name='area']").value   
       let rented = document.querySelector ("input[name='rented']").value
       let property = new Property (kind, area, rented)
-      this.addPropertiesList(property)
+      this.addOnPropertiesList(property)
       this.cleanForm()       
     }
 
@@ -21,27 +21,27 @@ class app{
         listElement.appendChild(buttonToRemove)
         document.getElementById("properties").appendChild(listElement)
     }
-createRentedMark(){
-let rentedMark = document.createElement ("span")
-rentedMark.style.color = "white"
-rentedMark.style.backgroundColor = "red"
-rentedMark.innerText = "ALUGADO"
-return rentedMark
-}
-createRemoveButton(){
-let buttonToRemove = document.createElement("button")
-buttonToRemove.setAttribute("onclick", "app.remove()")
-buttonToRemove.innerText= "Remover"
-return buttonToRemove 
-}
-cleanForm(){
-document.querySelector("input[name='area']").value = ""
-document.querySelector("input[name='rented']").checked = false
-}
+    createRentedMark(){
+    let rentedMark = document.createElement ("span")
+    rentedMark.style.color = "white"
+    rentedMark.style.backgroundColor = "red"
+    rentedMark.innerText = "ALUGADO"
+    return rentedMark
+    }
+    createRemoveButton(){
+    let buttonToRemove = document.createElement("button")
+    buttonToRemove.setAttribute("onclick", "app.remove()")
+    buttonToRemove.innerText= "Remover"
+    return buttonToRemove 
+    }
+    cleanForm(){
+    document.querySelector("input[name='area']").value = ""
+    document.querySelector("input[name='rented']").checked = false
+    }
 
     remove(){
-        let liToRemove = event.target.parentNode
-        document.getElementById("properties").removeChild(liToRemove)
+    let liToRemove = event.target.parentNode
+    document.getElementById("properties").removeChild(liToRemove)
     }
 
 }
