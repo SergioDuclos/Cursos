@@ -6,15 +6,19 @@ main h1{
     font-family: Open Sans Condensed;
     padding:20px;
     margin: 0px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    border-bottom: 8px solid #000; 
 }
 main {
     float:left;
+    width: 85%;
+  
 }
 
 .container{
-margin:auto 0;
-width: 80%; 
+width: 840px; 
+margin: auto;
+padding-bottom:50px;
 }
 
 h2{
@@ -46,11 +50,15 @@ aside, img{
     background-color: #3C1D3D;
     text-align:center;
     float: right;
+    width:13,5%;
 
 }
  
 aside{
  clear: right;
+ position: relative;
+top: 310px;
+border: 8px solid #000; 
 }
 nav h1{
      color: #F2FFFC; 
@@ -98,5 +106,54 @@ ul li a {
     background-color: #000;
     color: #fff;
     padding: 20px;
-    clear: both; 
+    clear: both;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+
   }
+  .minha-foto{
+     position:absolute;
+     top:0;
+     right:0;
+     border: 8px solid #000; 
+
+  }
+
+  /*Pagina Portfolio*/
+.fundo-portfolio{
+ background-color: #FAFFFC;
+
+}
+.container div{
+
+    width: 300px;
+    height: 300px;
+    margin:10px;
+    background-color:aqua;
+    display: inline-block;
+    padding: 16px;
+    border:8px solid #000;
+  }
+
+.container div img{
+    width: 320px;
+    height: 151px;
+  position : relative;
+  top: 0;
+  left:10px; 
+}
+
+figcaption{
+    font-family:inherit;
+    font-size: 18px;
+    margin-top: 25px;
+    display: block;
+    padding: 10px;
+    text-decoration: underline;
+    position: relative;
+    top: 10px;
+    text-align: justify;
+    color: #851944; 
+
+}
