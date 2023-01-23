@@ -8,9 +8,19 @@ main h1{
     margin: 0px;
     text-transform: uppercase; 
 }
+main {
+    float:left;
+}
+
+.container{
+margin:auto 0;
+width: 80%; 
+}
+
 h2{
     font-size: 40px;
     font-family: Open Sans Condensed;
+    clear:both;
 }
 
 p{
@@ -24,15 +34,23 @@ blockquote{
     width: 250px;
     margin: 0px;
     box-sizing: border-box;
+   
 }
-aside{
+.fiat{
+    float:right;
+}
+.petrobras{
+    float:left;
+}
+aside, img{
     background-color: #3C1D3D;
     text-align:center;
+    float: right;
 
 }
  
-aside ul li{
-
+aside{
+ clear: right;
 }
 nav h1{
      color: #F2FFFC; 
@@ -74,4 +92,11 @@ ul li a {
 }
 .twitter {
     background-image:url("twitter.png");
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    clear: both; 
   }
