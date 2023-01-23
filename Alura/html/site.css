@@ -5,7 +5,8 @@ main h1{
     text-align: center;
     font-family: Open Sans Condensed;
     padding:20px;
-    margin: 0px; 
+    margin: 0px;
+    text-transform: uppercase; 
 }
 h2{
     font-size: 40px;
@@ -29,6 +30,10 @@ aside{
     text-align:center;
 
 }
+ 
+aside ul li{
+
+}
 nav h1{
      color: #F2FFFC; 
 }
@@ -40,20 +45,31 @@ nav a {
     color: #F2FFFC;
 }
 
-
-
 ul {
-    color: pink;
+    color:    #F2FFFC;
     list-style: none;
     text-align:center;
 }
-    
-aside ul li{
-    display:inline-block;
-
-}
 ul li a {
     color: inherit;
+}
+
+.icones-sociais li{
+    display:inline-block;
 
 
 }
+ .icones-sociais a {
+    height: 40px;
+    width:40px;
+ }
+
+.github {
+    background-image: url("github.png");
+}
+.linkedin {
+    background-image: url("linkedin.png");
+}
+.twitter {
+    background-image:url("twitter.png");
+  }
