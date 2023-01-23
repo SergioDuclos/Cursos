@@ -24,7 +24,7 @@ blockquote{
     margin: 0px;
     box-sizing: border-box;
 }
-nav{
+aside{
     background-color: #3C1D3D;
     text-align:center;
 
@@ -33,18 +33,27 @@ nav h1{
      color: #F2FFFC; 
 }
 
+nav ul li{
+    display: block;
+}
 nav a {
     color: #F2FFFC;
 }
 
+
+
 ul {
     color: pink;
     list-style: none;
+    text-align:center;
 }
     
+aside ul li{
+    display:inline-block;
+
 }
- 
 ul li a {
     color: inherit;
+
 
 }
