@@ -27,6 +27,10 @@ nav a {
 	font-size: 22px;
 	text-decoration: none;
 }
+nav a:hover{
+	color: red;
+	text-decoration: underline;
+}
 .produtos{
 	padding: 50px 0;
 	margin: 0px auto;
@@ -40,7 +44,14 @@ nav a {
 	margin:0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 15px;
 }
+
+.produtos li:hover{
+	border: 2px solid red;
+}
+
 .produtos h2{
 	font-size: 30px;
 	font-weight: bold;
