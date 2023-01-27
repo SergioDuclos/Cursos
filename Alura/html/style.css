@@ -3,6 +3,10 @@ header {
 	padding: 20px 0;
 }
 
+body{
+	font-family: 'Montserrat', sans-serif;
+
+}
 .caixa {
 	position: relative;
 	width: 940px;
@@ -156,6 +160,7 @@ td, th {
 }
 
 .titulo-principal {
+	
 	text-align: center;
 	font-size: 2em;
 	margin: 0 0 1em;
@@ -183,3 +188,4 @@ td, th {
 .imagembeneficios {
 	width: 60%;
 }
+
