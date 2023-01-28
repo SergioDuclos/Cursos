@@ -19,7 +19,9 @@ body{
     background-repeat: no-repeat;
 }
 .container{
-    height: 100vh;    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;    
 }
 
 .container__botao{
