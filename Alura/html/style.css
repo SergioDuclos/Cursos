@@ -90,6 +90,7 @@ body{
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 5em 0;
 }
 .dispositivos__titulo{
     font-size: 48px;
@@ -98,4 +99,22 @@ body{
 .lista__item{
     font-size: 32px;
     color: var(--branco-principal);
+}
+.rodape{
+       text-align: center;
+}
+.rodape__lista{
+    margin-bottom: 1em;
+}
+.rodape__lista li{
+    display: inline-block;
+    margin: 0 1em;
+    text-align: center;
+}
+.rodape__lista li  a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+.rodape__texto{
+    
 }
