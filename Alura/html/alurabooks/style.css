@@ -19,3 +19,7 @@
    position: relative;
  }
 
+ .lista-menu__titulo, .lista-menu__Item{
+   padding: 1em;
+   background-color: var(--branco);
+}
