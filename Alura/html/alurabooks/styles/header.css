@@ -20,6 +20,7 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
   }
 .container__botao:checked ~ .lista-menu{
     display: block;

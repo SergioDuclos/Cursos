@@ -5,6 +5,7 @@
     --branco:#fff;
     --laranja: #EB9B00;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    
 }
  body{
     background-color: var(--cor-de-fundo);
@@ -27,4 +28,11 @@
 }
 .lista-menu__titulo{
    color: var(--laranja);
+}
+.lista-menu__link{
+   color: var(--azul-degrade);
+   -webkit-background-clip: text;
+   /*-webkit-text-fill-color: transparent;*/
+   background-clip:var(--azul-degrade);
+   text-transform: uppercase;
 }
