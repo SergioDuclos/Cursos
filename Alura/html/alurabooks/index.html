@@ -45,12 +45,12 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro"></div>
-                    <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro"></div>
-                    <div class="swiper-slide"><img src="img/Construct2.png" alt="Livro"></div>
-                    <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro"></div>
-                    <div class="swiper-slide"><img src="img/Gestão2.png" alt="Livro"></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/ApacheKafka.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/Arquitetura.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/Construct2.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/Gestão.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/Gestão2.png" alt="Livro"></div>
+                    <div class="swiper-slide"><img src="../img/Guia Front-end.png" alt="Livro"></div>
                     ...
                     </div>
                     <!-- If we need pagination -->
@@ -69,9 +69,16 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>   
     <script>
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+
+  
+});
+
+const swiper2 = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination
