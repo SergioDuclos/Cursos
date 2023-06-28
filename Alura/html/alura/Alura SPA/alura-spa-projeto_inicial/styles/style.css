@@ -17,4 +17,12 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: 2px solid #74959A;
+}
+
+.banner {
+  background-image: url(../../imagens/banner.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 27%;
+  min-height: 350px;
 }/*# sourceMappingURL=style.css.map */
