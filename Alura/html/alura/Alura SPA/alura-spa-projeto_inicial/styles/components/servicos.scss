@@ -13,7 +13,24 @@
         margin: 1rem;
     }
     h3{
+        text-align: center;
         font-size: $tamanho-do-texto /1.2;
         margin-bottom: 80px;
+        font-weight: 300;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        .card{
+            width: 360px;
+               .img-container{
+                padding-bottom: 2px;
+                margin-bottom: 6px solid $cor-secundaria;
+                img{
+                   width: 100% ;     
+                }
+               } 
+
+        }
     }
 }
