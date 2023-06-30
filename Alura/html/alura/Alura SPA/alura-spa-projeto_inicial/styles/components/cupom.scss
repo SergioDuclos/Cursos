@@ -1,4 +1,4 @@
-@import '../abstract/variaveis.scss';
+@import '../abstract/_variaveis.scss';
 
 
 #cupom{
@@ -11,7 +11,7 @@
 
         h2{
             margin: 2rem;
-            font-size: $tamanho-do-texto /1.7;
+            font-size: $tamanho-do-texto / 1.7;
         }
 
     }

@@ -1,4 +1,4 @@
-@import '../abstract/variaveis.scss';
+@import '../abstract/_variaveis.scss';
 
 .banner{
     background-image: url(../imagens/banner.jpeg);
@@ -22,7 +22,7 @@
             color: $cor-primaria;
         }
         h2{
-            font-size: $tamanho-do-texto /2;
+            font-size: $tamanho-do-texto / 2;
             color: $cor-secundaria;
         }
     }
